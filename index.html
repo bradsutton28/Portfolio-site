@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bradley Sutton's Personal Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://kit.fontawesome.com/b56657d3bb.js" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/bradley-im.png" class="logo">
+                <ul id="sideMenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><b>Software Developer</b></p>
+                <h1>Hi, I'm <span>Bradley Sutton</span> 
+                    <br> From Mobile, Alabama</h1>
+            </div>
+        </div>
+    </div>
+
+
+  <!--------about code starts here to be able to scroll down and see the about section-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/codewall-im.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class='col-2-title'>About Me</h1>
+                    <p>Enter text here describing myself FIKFNJFGSJ
+                        JSNDIGBSRGJNLASKDNADBGKADG
+                        SLGNSFDJGNSLDKFNSLDKFSDJFN
+                        SFDLGNSFJGNSFGJNSFKDJGNKSFDJG
+                        SFDKGJNSFKDJGNSFJGN
+                    </p>
+                    
+                    <div class="table-titles">
+                        <p class="table-links active-table-link" onclick="opentab('skills')">Skills</p>
+                        <p class="table-links" onclick="opentab('education')">Education</p>
+                        <p class="table-links" onclick="opentab('repository')">Repositorys</p>
+                        <p class="table-links" onclick="opentab('resume')">Resume</p>
+                    </div>
+                    <div class="table-contents active-table" id="skills">
+                        <ul>
+                            <li><span>Skill 1</span><br>Description of skill 1</li>
+                            <li><span>Skill 2</span><br>Description of skill 2</li>
+                            <li><span>Skill 3</span><br>Description of skill 3</li>
+                        </ul>
+                    </div>
+                    <div class="table-contents" id="education">
+                        <ul>
+                            <li><span>Degree 1</span><br>Description of Project 1</li>
+                            <li><span>Degree 2</span><br>Description of Project 2</li>
+                            <li><span>Degree 3</span><br>Description of Project 3</li>
+                        </ul>
+                    </div>
+                    <div class="table-contents" id="repository">
+                        <ul>
+                            <p><a href="https://github.com/bradsutton28"class="btn btn2" target="_blank"><i class="fa-solid fa-download"></i>Github Repository Link</a></p>
+                            <br><p><a href="test123.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>Indeed.com Link</a></p>
+                        </ul>
+                    </div>
+                    <div class="table-contents" id="resume">
+                        <ul>
+                            <p><a href="test123.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>Resume Download (.PDF)</a></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!--------services code starts here to be able to scroll down and see the services section-------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code fa-2xl"></i>
+                    <h2>Software Development</h2>
+                    <p>Description of the service</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe fa-2xl"></i>
+                    <h2>Web Design</h2>
+                    <p>Description of the service</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database fa-2xl"></i>
+                    <h2>SQL/Database Management</h2>
+                    <p>Description of the service</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------Portfolio code starts here to be able to scroll down and see the portfolio section-------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1-im.PNG">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>Website to supply important information regarding my skill-set and experience
+                            as a software developer
+                        </p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2-im.PNG">
+                    <div class="layer">
+                        <h3>Python/C/Java/HTML+CSS+JS</h3>
+                        <p>Various personal and profession projects
+                        </p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3-im.PNG">
+                    <div class="layer">
+                        <h3>C# + MSSQL Server Sailing School Database</h3>
+                        <p>Database built in C# for a sailing school, included building a data warehouse and visualizing the data into table form using Tableau
+                        </p>
+                        <a href='#'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+<!--------contact code starts here to be able to scroll down and see the contact section-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-reply"></i> suttonbradley6@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> (251)-257-6640</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/bradsutton28" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-bitbucket"></i></a>
+                        <a href=""><i class="fa-sharp fa-solid fa-handshake"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <h1 class="sub-title">Leave a Message</h1>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message to Me"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---Javascript to show active table selected in the about section and hide non active-->
+<script>
+    var tableLinks = document.getElementsByClassName("table-links")
+    var tableContents = document.getElementsByClassName("table-contents")
+
+    function opentab(tableName){
+        for(tableLink of tableLinks){
+            tableLink.classList.remove("active-table-link");
+        }
+        for(tableContent of tableContents){
+            tableContent.classList.remove("active-table");
+        }
+        event.currentTarget.classList.add("active-table-link");
+        document.getElementById(tableName).classList.add("active-table")
+    }
+</script>
+
+<!---Javascript to show the side menu on clicking the menu button (for Small screens)-->
+<script>
+    var sideMenu = document.getElementById("sideMenu");
+    
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
